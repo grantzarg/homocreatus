@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy-regular.woff') format('woff'),
+    url('../fonts/gilroy-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroySemiBold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff'),
+    url('../fonts/gilroy-semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular.woff') format('woff'),
+    url('../fonts/montserrat-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../fonts/montserrat-medium.woff') format('woff'),
+    url('../fonts/montserrat-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('../fonts/montserrat-semibold.woff') format('woff'),
+    url('../fonts/montserrat-semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KazimirMedium';
+    src: url('../fonts/KazimirMedium.woff') format('woff'),
+    url('../fonts/KazimirMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
