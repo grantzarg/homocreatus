@@ -442,11 +442,13 @@ body {
 .button-container .prev {
     position: relative;
     left: -10px;
+    transform: rotate(-90deg);
 }
 
 .button-container .next {
     position: relative;
     right: -10px;
+    transform: rotate(90deg);
 }
 
 .notices {
