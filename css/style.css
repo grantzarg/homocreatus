@@ -440,7 +440,6 @@ body {
 
 
 .button-container .prev {
-    transform: rotate(-180deg);
     position: relative;
     left: -10px;
 }
