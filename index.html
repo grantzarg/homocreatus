@@ -10,22 +10,25 @@
     </head>
     <body class="root">
         <nav class="nav">
-            <div class="nav-inner">
-                <a class="nav-inner-item" href="#book">О книге</a>
-                <a class="nav-inner-item" href="#author">Об авторе</a>
-                <a class="nav-inner-item" href="#reviews">Отзывы и рецензии</a>
-                <a class="nav-inner-item" href="#buy">Контакты</a>
+            <div class="wrapper">
+                <div class="nav-inner-menu" onclick="toggleMenu()"></div>
+                <div class="nav-inner">
+                    <a class="nav-inner-item" href="#book" onclick="navItemClick()">О книге</a>
+                    <a class="nav-inner-item" href="#author" onclick="navItemClick()">Об авторе</a>
+                    <a class="nav-inner-item" href="#reviews" onclick="navItemClick()">Отзывы и рецензии</a>
+                    <a class="nav-inner-item" href="#buy" onclick="navItemClick()">Контакты</a>
+                </div>
+                <a class="nav-button-wrapper" href="#buy">
+                    <button class="nav-button"><span>Купить книгу</span><img src="img/icons/book.svg"></button>
+                </a>
             </div>
-            <a href="#buy">
-                <button class="nav-button"><span>Купить книгу</span><img src="img/icons/book.svg"></button>
-            </a>
         </nav>
         <section class="cover">
             <div class="wrapper">
                 <img class="cover-logo" src="img/icons/logo.svg">
                 <div class="cover-wrapper">
                     <div class="cover-text">Захватывающая история обретения себя, где воспоминания, тайны и философия сплетаются в увлекательный путь героя. Роман для тех, кто любит глубину и неожиданные грани.</div>
-                    <button>Купить книгу</button>
+                    <a class="cover-button" href="#buy"><button>Купить книгу</button></a>
                 </div>
             </div>
             <div class="cover-shadow"></div>
@@ -43,7 +46,7 @@
                 </div>
                 <div class="author-citation">
                     «‎Цивилизационный разлом, сжатие привычного мира и поруганная любовь побудили написать этот роман. Благодарю всех, кто удивлял радовал и любил. Признателен вносившим хаос в мою жизнь, но особенно благодарен тем, кто указал цель и сподвиг пройти свой путь.»
-                    <img src="img/citation.svg">
+                    <img src="img/icons/citation.svg">
                 </div>
             </div>
         </section>
@@ -66,6 +69,7 @@
                 <div class="reviews-container">
                     <div class="reviews-wrapper">
                         <div class="reviews-item">
+                            <div class="gradient"></div>
                             <div class="review-text">
                                 Книга «Homo creatus» - причудливая смесь фантазии, философского эссе и романа-путешествия,  где из отрывочных воспоминаний и впечатлений возникает портрет поколения, чьи зрелые годы пришлись на непростую эпоху смены тысячелетий. Творческая манера автора изысканна   и своеобразна. Каждый читатель найдет в романе  что-то близкое именно его сердцу.
                             </div>
@@ -78,6 +82,7 @@
                             </div>
                         </div>
                         <div class="reviews-item">
+                            <div class="gradient"></div>
                             <div class="review-text">
                                 Книга «Homo creatus» - причудливая смесь фантазии, философского эссе и романа-путешествия,  где из отрывочных воспоминаний и впечатлений возникает портрет поколения, чьи зрелые годы пришлись на непростую эпоху смены тысячелетий. Творческая манера автора изысканна   и своеобразна. Каждый читатель найдет в романе  что-то близкое именно его сердцу.
                             </div>
@@ -90,6 +95,7 @@
                             </div>
                         </div>
                         <div class="reviews-item">
+                            <div class="gradient"></div>
                             <div class="review-text">
                                 Люди, время и события в романе «Homo creatus» реалистичны, хорошо узнаваемыми и даже осязаемы. Временами мне казалось, что читаю кино-сценарий. Образы и сюжеты кинематографичные и яркие. Читателя ждёт фееричный калейдоскоп человеческих судеб за полувековой период. Наслаждайтесь не спеша!
                             </div>
@@ -102,6 +108,7 @@
                             </div>
                         </div>
                         <div class="reviews-item">
+                            <div class="gradient"></div>
                             <div class="review-text">
                                 Книга «Homo creatus» - причудливая смесь фантазии, философского эссе и романа-путешествия,  где из отрывочных воспоминаний и впечатлений возникает портрет поколения, чьи зрелые годы пришлись на непростую эпоху смены тысячелетий. Творческая манера автора изысканна   и своеобразна. Каждый читатель найдет в романе  что-то близкое именно его сердцу.
                             </div>
@@ -115,8 +122,20 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <button onclick="prevSlide()">←</button>
-                        <button onclick="nextSlide()">→</button>
+                        <button class="prev" onclick="prevSlide()">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M18 15L12.2278 8.26574C12.108 8.12606 11.892 8.12606 11.7722 8.26574L6 15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/> </g>
+                            </svg>
+                        </button>
+                        <button class="next" onclick="nextSlide()">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M18 15L12.2278 8.26574C12.108 8.12606 11.892 8.12606 11.7722 8.26574L6 15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/> </g>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -126,39 +145,50 @@
                 <h2 class="title">Рецензии</h2>
                 <div class="notices-wrapper">
                     <div class="notice-item">
+                        <div class="gradient"></div>
                         <div class="notice-text">
                             В авантюрном повествовании Виктора Денисевича «Homo creatus», близком традициям плутовского романа, всё причудливо и неоднозначно. Очень личные, иногда интимные автобиографические впечатления, героя сплавляются с хроникой точно отобранных резонансных событий почти за шестьдесят лет.  При этом сам автор-рассказчик, сохраняет на протяжении всего повествования, и драматичного, и окрашенного различными оттенками юмора, свежесть восприятия и поразительную в деталях память.
                             <br>
                             В россыпи бесчисленных женских имен и судеб выделяется пленивший его в детстве, то и дело всплывающий образ одноклассницы с соломенными косичками. Этот персонаж, не названный в романе по имени, во многом определяет направление сюжета...
                         </div>
                         <div class="notice-person">
-                            <button class="notice-download"><span>Полная версия</span><img src="img/icons/download.svg" width="14" height="14"></button>
-                            <div class="notice-person-descr">
-                                <div class="notice-person-name">Ольга Завершинская</div>
-                                <div class="notice-person-job">Сценарист, редактор</div>
+                            <a href="./review.docx" target="_blank">
+                                <button class="notice-download"><span>Полная версия</span><img src="img/icons/download.svg" width="14" height="14"></button>
+                            </a>
+                            <div class="notice-person-inner">
+                                <div class="notice-person-descr">
+                                    <div class="notice-person-name">Ольга Завершинская</div>
+                                    <div class="notice-person-job">Сценарист, редактор</div>
+                                </div>
+                                <img class="notice-person-img" src="img/person1.jpeg">
                             </div>
-                            <img class="notice-person-img" src="img/person1.jpeg">
                         </div>
                     </div>
                     <div class="notice-item">
+                        <div class="gradient"></div>
                         <div class="notice-text">
                             Роман «Homo creates» создан на стыках литературных жанров: первая часть – классический роман; вторая часть – ставший популярным в последние десятилетия травелог, когда в произведении важное место занимает описание путешествий и иных стран; а третья – фантастика. Всё это плотно скреплено сюжетом, эпизодами, деталями, которые перекликаются друг с другом из разных частей, что позволяет говорить не о трёх разных книгах, а о едином произведении, написанном с использованием трёх литературных жанров, которые не смешиваясь, проникают друг в друга и находят отклик. Но вот — о смешении и в тоже время самостоятельности.
                             <br>
                             Это самый интересный принцип в построении романа, что создаёт единый поток...
                         </div>
                         <div class="notice-person">
-                            <button class="notice-download"><span>Полная версия</span><img src="img/icons/download.svg" width="14" height="14"></button>
-                            <div class="notice-person-descr">
-                                <div class="notice-person-name">Ольга Завершинская</div>
-                                <div class="notice-person-job">Сценарист, редактор</div>
+                            <a href="./review.docx" target="_blank">
+                                <button class="notice-download"><span>Полная версия</span><img src="img/icons/download.svg" width="14" height="14"></button>
+                            </a>
+                            <div class="notice-person-inner">
+                                <div class="notice-person-descr">
+                                <div class="notice-person-name">Александр Громов</div>
+                                <div class="notice-person-job">Член Союза писателей России</div>
+                                </div>
+                                <img class="notice-person-img" src="img/person2.jpeg">
                             </div>
-                            <img class="notice-person-img" src="img/person1.jpeg">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="buy" id="buy">
+            <div class="buy-top-shadow"></div>
             <div class="wrapper">
                 <h2 class="title-buy">
                     Закажите прямо сейчас!
@@ -166,30 +196,43 @@
                 <div class="buy-wrapper">
                     <div class="buy-item">
                         <img src="img/ozon.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://www.ozon.ru/product/homo-creatus-1729940015/" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                     <div class="buy-item">
                         <img src="img/wb.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://www.wildberries.ru/catalog/271462722/detail.aspx" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                     <div class="buy-item">
                         <img src="img/gorod.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://www.chitai-gorod.ru/product/homo-creatus-3069969" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                     <div class="buy-item">
                         <img src="img/globus.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://www.biblio-globus.ru/product/11014015" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                     <div class="buy-item">
                         <img src="img/dom.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://mdk-arbat.ru/book/6697937" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                     <div class="buy-item">
                         <img src="img/mir.png" width="120" height="120">
-                        <button class="buy-button">Перейти к покупке</button>
+                        <a href="https://knigamir.com/catalog/khudozhestvennaya-literatura_ID5/homo-creatus_ID2075647/" target="_blank">
+                            <button class="buy-button">Перейти к покупке</button>
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="buy-bottom-shadow"></div>
         </section>
     </body>
 
@@ -198,7 +241,9 @@
 
         function updateCarousel() {
             const wrapper = document.querySelector('.reviews-wrapper');
-            const offset = -currentIndex * 416; // ширина одного элемента
+            const slide = document.querySelector('.reviews-item');
+
+            const offset = -currentIndex * (slide.clientWidth + 24); // ширина одного элемента
             wrapper.style.transform = `translateX(${offset}px)`;
         }
 
@@ -211,5 +256,19 @@
             currentIndex = (currentIndex - 1 + 3) % 3; // количество элементов в карусели
             updateCarousel();
         }
+
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-inner-menu');
+            menu.classList.toggle('nav-inner-menu-opened');
+        }
+
+        function navItemClick() {
+            const menu = document.querySelector('.nav-inner-menu');
+            menu.classList.remove('nav-inner-menu-opened');
+        }
+
+        addEventListener("resize", () => {
+            updateCarousel()
+        });
     </script>
 </html>
