@@ -336,6 +336,11 @@ body {
     display: flex;
     align-items: center;
     transition: 0.5s ease-in-out;
+
+    @media (max-width: 1400px) {
+       justify-content: space-between;
+       align-items: stretch;
+    }
 }
 
 .reviews-item {
@@ -353,12 +358,16 @@ body {
     color: #F5F5F5;
 
     @media (max-width: 1400px) {
-        width: calc(50% - 5px);
+        padding: 30px 25px;
+        width: 32%;
+        height: unset;
+        margin-right: 0;
     }
 
     @media (max-width: 950px) {
         width: 100%;
         height: 540px;
+        margin-right: 24px;
     }
 }
 
@@ -403,12 +412,16 @@ body {
 }
 
 .button-container {
+    display: none;
     position: absolute;
     top: 50%;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+
+    @media (max-width: 950px) {
+        display: flex;
+    }
 }
 
 .button-container button {
