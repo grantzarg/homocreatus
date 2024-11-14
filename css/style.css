@@ -473,7 +473,8 @@ body {
 
 .notices-wrapper {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 
     @media (max-width: 1350px) {
         flex-direction: column;
@@ -487,7 +488,6 @@ body {
     justify-content: space-between;
     flex-shrink: 0;
     width: 600px;
-    height: 523px;
     padding: 32px 40px;
     border-radius: 8px;
     overflow: hidden;
@@ -503,8 +503,12 @@ body {
     }
 }
 
+.notice-item:nth-child(3) {
+    margin: 24px auto 0;
+}
+
 .notice-item:first-of-type {
-    margin-right: 24px;
+    margin-right: 20px;
 
     @media (max-width: 1350px) {
         margin-right: 0;
