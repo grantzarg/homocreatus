@@ -365,7 +365,7 @@ body {
         padding: 30px 25px;
         width: 32%;
         height: unset;
-        margin-right: 0;
+        margin-right: 22px;
     }
 
     @media (max-width: 950px) {
@@ -764,4 +764,211 @@ body {
         margin-left: 0;
         order: -1;
     }
+}
+
+.pictures-container {
+    position: relative;
+    width: 600px;
+    height: 552px;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        height: 87vw;
+        flex-shrink: 0;
+    }
+}
+
+.pictures-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pictures-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+
+     @media (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.picture {
+    width: 600px;
+    height: 552px;
+    border-radius: 8px;
+    user-select: none;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+
+     @media (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.picture:nth-child(1) {
+    background-image: url('../img/pictures/picture1.jpg');
+}
+
+.picture:nth-child(2) {
+    background-image: url('../img/pictures/picture2.jpg');
+}
+
+.picture:nth-child(3) {
+    background-image: url('../img/pictures/picture3.jpg');
+}
+
+.picture:nth-child(4) {
+    background-image: url('../img/pictures/picture4.jpg');
+}
+
+.picture:nth-child(5) {
+    background-image: url('../img/pictures/picture5.jpg');
+}
+
+.picture:nth-child(6) {
+    background-image: url('../img/pictures/picture6.jpg');
+}
+
+.picture:nth-child(7) {
+    background-image: url('../img/pictures/picture7.jpg');
+}
+
+.picture:nth-child(8) {
+    background-image: url('../img/pictures/picture8.jpg');
+}
+
+.picture:nth-child(9) {
+    background-image: url('../img/pictures/picture9.jpg');
+}
+
+.picture:nth-child(10) {
+    background-image: url('../img/pictures/picture10.jpg');
+}
+
+.picture:nth-child(11) {
+    background-image: url('../img/pictures/picture11.jpg');
+}
+
+.picture:nth-child(12) {
+    background-image: url('../img/pictures/picture12.jpg');
+}
+
+.picture:nth-child(13) {
+    background-image: url('../img/pictures/picture13.jpg');
+}
+
+.picture:nth-child(14) {
+    background-image: url('../img/pictures/picture14.jpg');
+}
+
+.picture:nth-child(15) {
+    background-image: url('../img/pictures/picture15.jpg');
+}
+
+.pictures-button {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #DAD4CC;
+}
+
+.pictures-button:hover {
+    color: #FFFFFF;
+}
+
+.pictures-prev {
+    left: -90px;
+    top: 0;
+
+     @media (max-width: 800px) {
+        left: 0;
+        z-index: 1;
+        color: #FFFFFF;
+    }
+}
+
+.pictures-next {
+    right: -90px;
+    top: 0;
+    transform: rotate(180deg);
+
+    @media (max-width: 800px) {
+        right: 0;
+        z-index: 1;
+        color: #FFFFFF;
+    }
+}
+
+.pictures-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1250px) {
+        flex-direction: column;
+    }
+}
+
+.picture-descr {
+    margin-left: 160px;
+    color: #DAD4CC;
+
+    @media (max-width: 1250px) {
+        margin-left: 0;
+        margin-top: 24px;
+        width: 600px;
+    }
+
+    @media (max-width: 800px) {
+        margin-left: 0;
+        margin-top: 24px;
+        width: unset;
+    }
+}
+
+.picture-title {
+    margin-bottom: 16px;
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    user-select: none;
+}
+
+.picture-text {
+    width: 360px;
+    font-family: 'MontserratMedium', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: 1250px) {
+        width: unset;
+    }
+}
+
+.picture-page {
+    margin-top: 32px;
+    font-family: 'MontserratSemiBold', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DAD4CCCC;
+    opacity: 0.8;
+}
+
+.animated-text {
+  transition: all 0.5s ease; /* Плавная анимация */
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
