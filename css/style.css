@@ -823,6 +823,11 @@ body {
 
 .picture:nth-child(4) {
     background-image: url('../img/pictures/picture4.jpg');
+    height: 700px;
+
+    @media (max-width: 800px) {
+        height: 115vw;
+    }
 }
 
 .picture:nth-child(5) {
@@ -867,6 +872,11 @@ body {
 
 .picture:nth-child(15) {
     background-image: url('../img/pictures/picture15.jpg');
+     height: 700px;
+
+    @media (max-width: 800px) {
+        height: 115vw;
+    }
 }
 
 .pictures-button {
