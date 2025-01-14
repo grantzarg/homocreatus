@@ -504,7 +504,15 @@ body {
 }
 
 .notice-item:nth-child(3) {
-    margin: 24px auto 0;
+    margin: 24px 24px 0 0;
+}
+
+.notice-item:nth-child(4) {
+    margin: 24px 0 0;
+}
+
+.notice-item:nth-child(4) .notice-person-inner {
+    margin-left: auto;
 }
 
 .notice-item:first-of-type {
