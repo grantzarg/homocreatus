@@ -462,14 +462,14 @@ body {
         right: -25px;
     }
 }
-
+/* 
 .notices {
     padding-bottom: 112px;
 
     @media (max-width: 700px) {
         padding-bottom: 0;
     }
-}
+} */
 
 .notices-wrapper {
     display: flex;
@@ -989,4 +989,12 @@ body {
 
 .fade-in {
   opacity: 1;
+}
+
+.booktrailer-container {
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
