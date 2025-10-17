@@ -1003,3 +1003,18 @@ body {
     border-radius: 8px;
     display: block;
 }
+
+/* Стили для Plyr плеера */
+.plyr {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.plyr__video-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.plyr__poster {
+    border-radius: 8px;
+}

@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     </head>
     <body class="root">
         <nav class="nav">
@@ -349,7 +350,7 @@
             <div class="wrapper">
                 <h2 class="title">Буктрейлер</h2>
                 <div class="booktrailer-container">
-                    <video class="booktrailer-video" controls preload="metadata" poster="" playsinline webkit-playsinline>
+                    <video id="booktrailer-video" class="booktrailer-video" preload="metadata" poster="" playsinline webkit-playsinline>
                         <source src="https://1750706323988.wn5.ru/%D0%91%D1%83%D0%BA%D1%82%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80_Homo%20Creatus.mp4" type="video/mp4">
                         Ваш браузер не поддерживает воспроизведение видео.
                     </video>
@@ -575,5 +576,32 @@
             currentIndex = 0;
             currentPicturesIndex = 0;
         });
+
+        // Инициализация Plyr плеера
+        document.addEventListener('DOMContentLoaded', function() {
+            const player = new Plyr('#booktrailer-video', {
+                controls: [
+                    'play-large',
+                    'play',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings',
+                    'fullscreen'
+                ],
+                settings: ['quality', 'speed'],
+                quality: {
+                    default: 720,
+                    options: [1080, 720, 480, 360]
+                },
+                speed: {
+                    selected: 1,
+                    options: [0.5, 0.75, 1, 1.25, 1.5, 2]
+                }
+            });
+        });
     </script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 </html>
