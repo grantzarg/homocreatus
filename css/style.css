@@ -992,9 +992,14 @@ body {
 }
 
 .booktrailer-container {
-    video {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booktrailer-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
 }
