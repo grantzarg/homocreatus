@@ -171,6 +171,10 @@ body {
     flex-shrink: 0;
 }
 
+.cover-button-sign button {
+    background: #8BA8D8;
+}
+
 .cover-wrapper {
     position: relative;
     z-index: 1;
@@ -332,6 +336,32 @@ body {
         margin-top: 80px;
         margin-bottom: 60px;
     }
+}
+
+.kormchiy-link {
+    margin-bottom: 80px;
+
+    @media (max-width: 950px) {
+        margin-bottom: 50px;
+    }
+}
+
+.kormchiy-link-anchor {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: rgba(218, 212, 204, 0.1);
+    color: #CFB0CD;
+    font-family: 'MontserratSemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.kormchiy-link-anchor:hover {
+    color: #FFFFFF;
+    background: rgba(218, 212, 204, 0.2);
 }
 
 .synopsis-title {
