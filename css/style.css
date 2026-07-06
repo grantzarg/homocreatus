@@ -167,14 +167,6 @@ body {
     }
 }
 
-.cover-button {
-    flex-shrink: 0;
-}
-
-.cover-button-sign button {
-    background: #8BA8D8;
-}
-
 .cover-wrapper {
     position: relative;
     z-index: 1;
@@ -328,40 +320,89 @@ body {
     }
 }
 
+.autograph-cta {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.autograph-cta-link {
+    display: flex;
+    justify-content: center;
+}
+
+.autograph-cta-button {
+    background: #8BA8D8;
+    border-radius: 8px;
+    padding: 14px 36px;
+    font-family: 'GilroySemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #F5F5F5;
+
+    @media (max-width: 950px) {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px 20px;
+    }
+}
+
 .synopsis {
     margin-top: 124px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
     @media (max-width: 950px) {
         margin-top: 80px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 }
 
 .kormchiy-link {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 
     @media (max-width: 950px) {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
+}
+
+.kormchiy-link + .reviews .title {
+    margin-top: 80px;
+
+    @media (max-width: 950px) {
+        margin-top: 56px;
+    }
+}
+
+.kormchiy-link .wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .kormchiy-link-anchor {
     display: inline-flex;
     align-items: center;
-    padding: 12px 20px;
+    justify-content: center;
+    padding: 14px 36px;
     border-radius: 8px;
-    background: rgba(218, 212, 204, 0.1);
-    color: #CFB0CD;
-    font-family: 'MontserratSemiBold', sans-serif;
-    font-size: 18px;
+    background: #8BA8D8;
+    color: #F5F5F5;
+    font-family: 'GilroySemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 24px;
-    transition: color 0.3s ease, background 0.3s ease;
+    transition: opacity 0.3s ease;
+
+    @media (max-width: 950px) {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px 20px;
+    }
 }
 
 .kormchiy-link-anchor:hover {
-    color: #FFFFFF;
-    background: rgba(218, 212, 204, 0.2);
+    opacity: 0.9;
 }
 
 .synopsis-title {
